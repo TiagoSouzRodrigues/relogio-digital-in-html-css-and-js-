@@ -1,51 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500;600&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open sans', sans-serif;
-}
-body {
-    height: 100vh;
-    background: linear-gradient(120deg, #c9e043d8, #910101da);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.relogio {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 200px;
-    width: 550px;
-    background: transparent;
-    border-radius: 3px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
-}
-.relogio div {
-    height: 170px;
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    background: rgba(5, 5, 5, 0.9);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
-    border-radius: 7px;
-    letter-spacing: 3px;
-}
-.relogio span {
-    font-weight: bolder;
-    font-size: 60px;
-}
-.relogio span.tempo {
-    font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open sans", sans-serif;
 }
 
-@media only screen and (max-width: 900px){
-    div.relogio{
-        height: 78vh;
-        flex-direction: column;
-        width:38vh;   
-    }
+h1{
+    display: flex;
+    text-align: center;
+    color: #6b7972;
+}
+body {
+  height: 100vh;
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.relogio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  width: 550px;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+
+  border: 2px solid rgb(252, 246, 246);
+  border-radius: 8px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+.relogio div {
+  height: 100px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(141, 139, 139, 0.212);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  letter-spacing: 3px;
+}
+.relogio span {
+  font-weight: bolder;
+  font-size: 50px;
+}
+.relogio span.tempo {
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  div.relogio {
+    height: 80vh;
+    flex-direction: column;
+    width: 46vh;
+  }
 }
