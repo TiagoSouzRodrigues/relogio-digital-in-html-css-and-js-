@@ -5,15 +5,30 @@
   font-family: "Open sans", sans-serif;
 }
 
-h1{
-    display: flex;
-    text-align: center;
-    color: #6b7972;
+h1 {
+    background: rgb(48, 100, 102);
+    background: linear-gradient(
+      45deg,
+      rgba(48, 100, 102, 1) 19%,
+      rgba(249, 249, 249, 1) 94%
+    );
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  justify-content: center;
+  border: 2px solid rgb(235, 233, 233);
+  border-radius: 4px;
+  margin-bottom: 4px;
 }
 body {
   height: 100vh;
-  background-color: #08aeea;
-  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+  background: rgb(6, 21, 29);
+  background: radial-gradient(
+    circle,
+    rgba(6, 21, 29, 1) 8%,
+    rgba(86, 95, 104, 1) 90%
+  );
 
   display: flex;
   align-items: center;
@@ -25,8 +40,12 @@ body {
   justify-content: space-around;
   height: 200px;
   width: 550px;
-  background-color: #85ffbd;
-  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  background: rgb(48, 100, 102);
+  background: linear-gradient(
+    45deg,
+    rgba(48, 100, 102, 1) 19%,
+    rgba(249, 249, 249, 1) 94%
+  );
 
   border: 2px solid rgb(252, 246, 246);
   border-radius: 8px;
@@ -37,6 +56,7 @@ body {
   width: 140px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -52,6 +72,13 @@ body {
 .relogio span.tempo {
   font-size: 10px;
 }
+
+p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+
 
 @media only screen and (max-width: 1000px) {
   div.relogio {
